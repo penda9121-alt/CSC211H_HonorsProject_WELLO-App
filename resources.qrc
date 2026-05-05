@@ -1,0 +1,74 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>splashLogo.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>recipes_background.jpg</file>
+    </qresource>
+    <qresource prefix="/lunchImages">
+        <file>images/Lunch/L01.jpg</file>
+        <file>images/Lunch/L02.jpg</file>
+        <file>images/Lunch/L03.jpg</file>
+        <file>images/Lunch/L04.jpg</file>
+        <file>images/Lunch/L05.jpg</file>
+        <file>images/Lunch/L06.jpg</file>
+        <file>images/Lunch/L07.jpg</file>
+        <file>images/Lunch/L08.jpg</file>
+        <file>images/Lunch/L09.jpg</file>
+        <file>images/Lunch/L10.jpg</file>
+        <file>images/Lunch/L11.jpg</file>
+        <file>images/Lunch/L12.jpg</file>
+        <file>images/Lunch/L13.jpg</file>
+        <file>images/Lunch/L14.jpg</file>
+        <file>images/Lunch/L15.jpg</file>
+    </qresource>
+    <qresource prefix="/dinnerImages">
+        <file>images/Dinner/D01.jpg</file>
+        <file>images/Dinner/D02.jpg</file>
+        <file>images/Dinner/D03.jpg</file>
+        <file>images/Dinner/D04.jpg</file>
+        <file>images/Dinner/D05.jpg</file>
+        <file>images/Dinner/D06.jpg</file>
+        <file>images/Dinner/D07.jpg</file>
+        <file>images/Dinner/D08.jpg</file>
+        <file>images/Dinner/D09.jpg</file>
+        <file>images/Dinner/D10.jpg</file>
+        <file>images/Dinner/D11.jpg</file>
+        <file>images/Dinner/D12.jpg</file>
+        <file>images/Dinner/D13.jpg</file>
+        <file>images/Dinner/D14.jpg</file>
+        <file>images/Dinner/D15.jpg</file>
+    </qresource>
+    <qresource prefix="/breakfastImages">
+        <file>images/Breakfast/B01.jpg</file>
+        <file>images/Breakfast/B02.jpg</file>
+        <file>images/Breakfast/B03.jpg</file>
+        <file>images/Breakfast/B04.jpg</file>
+        <file>images/Breakfast/B05.jpg</file>
+        <file>images/Breakfast/B06.jpg</file>
+        <file>images/Breakfast/B07.jpg</file>
+        <file>images/Breakfast/B08.jpg</file>
+        <file>images/Breakfast/B09.jpg</file>
+        <file>images/Breakfast/B10.jpg</file>
+        <file>images/Breakfast/B11.jpg</file>
+        <file>images/Breakfast/B12.jpg</file>
+        <file>images/Breakfast/B13.jpg</file>
+        <file>images/Breakfast/B14.jpg</file>
+        <file>images/Breakfast/B15.jpg</file>
+    </qresource>
+    <qresource prefix="/data">
+        <file>data/WELLO_RECIPES_FULL.txt</file>
+    </qresource>
+    <qresource prefix="/new/BIM">
+        <file>bioIngredientsImage/Avocado.jpg</file>
+        <file>bioIngredientsImage/Black Pepper.jpg</file>
+        <file>bioIngredientsImage/Carrots.jpg</file>
+        <file>bioIngredientsImage/Chicke Breast.jpg</file>
+        <file>bioIngredientsImage/Cucumber.jpg</file>
+        <file>bioIngredientsImage/Eggs.jpg</file>
+        <file>bioIngredientsImage/Lettuce.jpg</file>
+        <file>bioIngredientsImage/Olive Oil.jpg</file>
+        <file>bioIngredientsImage/Rice.jpg</file>
+        <file>bioIngredientsImage/Tomato.jpg</file>
+    </qresource>
+</RCC>

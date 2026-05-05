@@ -1,0 +1,3610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1288</width>
+    <height>1636</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>1191</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="splashPage">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QLabel" name="splashLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1200</width>
+        <height>800</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	border-image: url(:/new/prefix1/splashLogo.png) 0 0 0 0 stretch stretch;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="welcomePage">
+     <property name="styleSheet">
+      <string notr="true">background-color: #f5f2f8;</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QWidget" name="formContainer" native="true">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit, QComboBox {
+    background-color: white;
+    border: 2px solid #c9b2e6;
+    border-radius: 12px;
+    padding: 8px;
+    min-height: 36px;
+    font-size: 14px;
+    color: black;
+}
+
+QLineEdit:focus, QComboBox:focus {
+    border: 2px solid #7b4fa3;
+    background-color: #fcfaff;
+}</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="allergies">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #5a3d85;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Allergies</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="allergiesInput">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    border: 2px solid #b89ad6;
+    border-radius: 12px;
+    padding: 8px;
+    min-height: 35px;
+    color: black;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #7b4fa3;
+    background-color: #fcfaff;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="age">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #5a3d85;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Age</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="ageInput">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    border: 2px solid #b89ad6;
+    border-radius: 12px;
+    padding: 8px;
+    min-height: 35px;
+    color: black;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #7b4fa3;
+    background-color: #fcfaff;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="gender">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #5a3d85;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Gender</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="genderComboBox">
+           <property name="styleSheet">
+            <string notr="true">QComboBox {
+    background-color: white;
+    border: 2px solid #c9b2e6;
+    border-radius: 12px;
+    padding: 8px;
+    min-height: 36px;
+    font-size: 14px;
+    color: black;
+}
+
+QComboBox:focus {
+    border: 2px solid #7b4fa3;
+    background-color: #fcfaff;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 30px;
+}
+
+QComboBox::down-arrow {
+    image: none;
+}</string>
+           </property>
+           <property name="editable">
+            <bool>false</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>Select</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Female</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Male</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>prefer not to say</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="weight">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #5a3d85;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Weight (Kg)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="weightInput">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    border: 2px solid #b89ad6;
+    border-radius: 12px;
+    padding: 8px;
+    min-height: 35px;
+    color: black;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #7b4fa3;
+    background-color: #fcfaff;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="height">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #5a3d85;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Height (cm)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="heightInput">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    border: 2px solid #b89ad6;
+    border-radius: 12px;
+    padding: 8px;
+    min-height: 35px;
+    color: black;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #7b4fa3;
+    background-color: #fcfaff;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="levelofActivity">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #5a3d85;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Activity Level</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="activityComboBox">
+           <property name="styleSheet">
+            <string notr="true">QComboBox {
+    background-color: white;
+    border: 2px solid #c9b2e6;
+    border-radius: 12px;
+    padding: 8px;
+    min-height: 36px;
+    font-size: 14px;
+    color: black;
+}
+
+QComboBox:focus {
+    border: 2px solid #7b4fa3;
+    background-color: #fcfaff;
+}</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Select</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Sedentary</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Lightly active</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Moderately active</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Very active</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="conditions">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #5a3d85;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Health Condition(s)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="conditionsInput">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    border: 2px solid #b89ad6;
+    border-radius: 12px;
+    padding: 8px;
+    min-height: 35px;
+    color: black;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #7b4fa3;
+    background-color: #fcfaff;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="continueBtn">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 14px;
+    padding: 10px;
+    min-height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+           </property>
+           <property name="text">
+            <string>Continue</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="menuPage">
+     <property name="styleSheet">
+      <string notr="true">QWidget#menuPage {
+	background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+		stop:0 #f5f0ff, stop:1 #ede0ff);
+}</string>
+     </property>
+     <widget class="QPushButton" name="recipesBtn">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>240</y>
+        <width>291</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: #7b4fa3;
+	color: #4a3f8f;
+	border: 2px solid #c9b8f0;
+	border-radius: 16px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Georgia';
+	padding: 20px;
+}
+
+QPushButton:hover {
+	background-color: #4a3f8f;
+	color: white;
+}
+
+QPushButton:pressed {
+	background-color: #2d1b6e;
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>🍽️RECIPES</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="healthBtn">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>480</y>
+        <width>301</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: #7b4fa3;
+	color: #4a3f8f;
+	border: 2px solid #c9b8f0;
+	border-radius: 16px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Georgia';
+	padding: 20px;
+}
+
+QPushButton:hover {
+	background-color: #4a3f8f;
+	color: white;
+}
+
+QPushButton:pressed {
+	background-color: #2d1b6e;
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>📊Health Track</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ingredientsBtn">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>240</y>
+        <width>291</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: #7b4fa3;
+	color: #4a3f8f;
+	border: 2px solid #c9b8f0;
+	border-radius: 16px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Georgia';
+	padding: 20px;
+}
+
+QPushButton:hover {
+	background-color: #4a3f8f;
+	color: white;
+}
+
+QPushButton:pressed {
+	background-color: #2d1b6e;
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>🛒Order BIO ingredients</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="profileBtn">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>490</y>
+        <width>291</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: #7b4fa3;
+	color: #4a3f8f;
+	border: 2px solid #c9b8f0;
+	border-radius: 16px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Georgia';
+	padding: 20px;
+}
+
+QPushButton:hover {
+	background-color: #4a3f8f;
+	color: white;
+}
+
+QPushButton:pressed {
+	background-color: #2d1b6e;
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>👤Profile</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="welcomeLabel">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>10</y>
+        <width>521</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Georgia</family>
+        <pointsize>-1</pointsize>
+        <bold>true</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: #2d1b6e;
+	font-size: 28px;
+	font-weight: bold;
+	font-family: 'Georgia';
+}</string>
+      </property>
+      <property name="text">
+       <string>Welcome to WELLO!</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="welcomeSloganLabel">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>80</y>
+        <width>771</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: #6b5b95;
+	font-size: 13px;
+	font-family: 'Georgia';
+	font-style: italic;
+}</string>
+      </property>
+      <property name="text">
+       <string>Eat well, Live well - Discover quick healthy recipes, track your wellness, and plan meals with bio ingredients</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="infoLabel">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>160</y>
+        <width>681</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Georgia</family>
+        <pointsize>-1</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: #6b5b95;
+	font-size: 25px;
+	font-family: 'Georgia';
+	font-style: italic;
+}</string>
+      </property>
+      <property name="text">
+       <string>Enter you informations in the profile first</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="recipesPage">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #f5f2f8;</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <widget class="QPushButton" name="breakfastBtn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 250px;
+    min-height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+        </property>
+        <property name="text">
+         <string>Breakfast</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="lunchBtn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 250px;
+    min-height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+        </property>
+        <property name="text">
+         <string>Lunch</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="dinnerBtn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 250px;
+    min-height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+        </property>
+        <property name="text">
+         <string>Dinner</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="recipesBackBtn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 250px;
+    min-height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="healthPage">
+     <property name="styleSheet">
+      <string notr="true">background-color: #f5f2f8;</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_8">
+      <item>
+       <widget class="QLabel" name="healthTrack">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #7b4fa3;
+    background-color: rgba(123, 79, 163, 0.15);
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}</string>
+        </property>
+        <property name="text">
+         <string>Health Track</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="caloriesBtn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 250px;
+    min-height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+        </property>
+        <property name="text">
+         <string>Calories</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="calorieNeedsBtn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 250px;
+    min-height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+        </property>
+        <property name="text">
+         <string>Calorie Needs</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="healthHistoryBtn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 250px;
+    min-height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+        </property>
+        <property name="text">
+         <string>Health History</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="healthBackBtn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 250px;
+    min-height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="breakfastPage">
+     <property name="styleSheet">
+      <string notr="true">QWidget {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #f5f0ff,
+        stop:1 #ede0ff
+    );
+}
+
+QScrollArea {
+    background: transparent;
+    border: none;
+}
+
+QScrollArea &gt; QWidget &gt; QWidget {
+    background: transparent;
+}</string>
+     </property>
+     <widget class="QLabel" name="breakfastLabel">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>10</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>28</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>BREAKFAST</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="breakfastScrollArea">
+      <property name="geometry">
+       <rect>
+        <x>-20</x>
+        <y>70</y>
+        <width>1241</width>
+        <height>761</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1224</width>
+         <height>1175</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="5" column="2">
+         <widget class="QLabel" name="B13Label">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Boiled Eggs with Fruit</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="2">
+         <widget class="QPushButton" name="b14ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#b14ImageBtn {
+    border-image: url(:/breakfastImages/images/Breakfast/B14.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="2" rowspan="2">
+         <widget class="QPushButton" name="b13ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#b13ImageBtn {
+    border-image: url(:/breakfastImages/images/Breakfast/B13.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLabel" name="B09Label">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Chia Pudding with Fruit</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="B05Label">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Bircher Muesli</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="B04Label">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Scrambled Eggs on Toast with Tomato</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="b01ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#b01ImageBtn {
+    border-image: url(:/breakfastImages/images/Breakfast/B01.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QPushButton" name="b04ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#b04ImageBtn {
+    border-image: url(:/breakfastImages/images/Breakfast/B04.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="QPushButton" name="b10ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#b10ImageBtn {
+    border-image: url(:/breakfastImages/images/Breakfast/B10.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="2">
+         <widget class="QLabel" name="B14Label">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Smoothie Bowl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="B06Label">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Wholemeal Banana Oat Pancakes</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QPushButton" name="b03ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#b03ImageBtn {
+    border-image: url(:/breakfastImages/images/Breakfast/B03.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" rowspan="2">
+         <widget class="QLabel" name="B03Label">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Mango Berry Smoothie</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QLabel" name="B10Label">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Breakfast Egg &amp; Veggie Wrap</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="2">
+         <widget class="QLabel" name="B15Label">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Vegetable Egg Muffins</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1" rowspan="2">
+         <widget class="QPushButton" name="b08ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#b08ImageBtn {
+    border-image: url(:/breakfastImages/images/Breakfast/B08.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="B07Label">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Greek Yogurt Parfait</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" rowspan="2">
+         <widget class="QPushButton" name="b06ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#b06ImageBtn {
+    border-image: url(:/breakfastImages/images/Breakfast/B06.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2" rowspan="2">
+         <widget class="QPushButton" name="b11ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#b11ImageBtn {
+    border-image: url(:/breakfastImages/images/Breakfast/B11.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLabel" name="B08Label">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Peanut Butter Banana Toast</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QPushButton" name="b05ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#b05ImageBtn {
+    border-image: url(:/breakfastImages/images/Breakfast/B05.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="B11Label">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Apple Cinnamon Oatmeal</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLabel" name="B12Label">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Cottage Cheese Fruit Bowl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="B02Label">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Ham, Cheese, and Spinach Omelette</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="b02ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#b02ImageBtn {
+    border-image: url(:/breakfastImages/images/Breakfast/B02.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QPushButton" name="b12ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#b12ImageBtn {
+    border-image: url(:/breakfastImages/images/Breakfast/B12.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="2">
+         <widget class="QPushButton" name="b15ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#b15ImageBtn {
+    border-image: url(:/breakfastImages/images/Breakfast/B15.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QPushButton" name="b09ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#b09ImageBtn {
+    border-image: url(:/breakfastImages/images/Breakfast/B09.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" rowspan="2">
+         <widget class="QLabel" name="B01Label">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>11</pointsize>
+            <italic>true</italic>
+           </font>
+          </property>
+          <property name="text">
+           <string>Porridge with Fruit Topping</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="b07ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#b07ImageBtn {
+    border-image: url(:/breakfastImages/images/Breakfast/B07.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0" colspan="3">
+         <widget class="QPushButton" name="breakfastBackBtn">
+          <property name="minimumSize">
+           <size>
+            <width>274</width>
+            <height>69</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>-1</pointsize>
+            <fontweight>DemiBold</fontweight>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 250px;
+    min-height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+          </property>
+          <property name="text">
+           <string>Back</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget"/>
+    <widget class="QWidget" name="ingredientsPage">
+     <property name="styleSheet">
+      <string notr="true">QWidget {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #f5f0ff,
+        stop:1 #ede0ff
+    );
+}
+
+QScrollArea {
+    background: transparent;
+    border: none;
+}
+
+QScrollArea &gt; QWidget &gt; QWidget {
+    background: transparent;
+}</string>
+     </property>
+     <widget class="QLabel" name="ingredientsTitleLabel">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>431</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>20</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Bio Ingredients</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="cartTotalLabel">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>660</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>🛒Cart Total: $0.00</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ingredientsBackBtn">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>680</y>
+        <width>274</width>
+        <height>69</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 250px;
+    min-height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="CheckoutBtn">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>700</y>
+        <width>274</width>
+        <height>69</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 250px;
+    min-height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+      </property>
+      <property name="text">
+       <string>Checkout</string>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>1151</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1151</width>
+         <height>581</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="lunchPage">
+     <property name="styleSheet">
+      <string notr="true">QWidget {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #f5f0ff,
+        stop:1 #ede0ff
+    );
+}
+
+QScrollArea {
+    background: transparent;
+    border: none;
+}
+
+QScrollArea &gt; QWidget &gt; QWidget {
+    background: transparent;
+}</string>
+     </property>
+     <widget class="QLabel" name="lunchLabel">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>20</y>
+        <width>291</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>28</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>LUNCH</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="luncScrollArea">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>901</width>
+        <height>701</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="lunchScrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>884</width>
+         <height>1161</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="4" column="1">
+         <widget class="QLabel" name="L08Label">
+          <property name="text">
+           <string>Chicken Stir-Fry with Rice</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QPushButton" name="l05ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#l05ImageBtn {
+    border-image: url(:/lunchImages/images/Lunch/L05.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="2" colspan="2">
+         <widget class="QPushButton" name="l14ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#l14ImageBtn {
+    border-image: url(:/lunchImages/images/Lunch/L14.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="l01ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#l01ImageBtn {
+    border-image: url(:/lunchImages/images/Lunch/L01.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="L02Label">
+          <property name="text">
+           <string>Honey Soy Beef with Sweet Potato</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="l06ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#l06ImageBtn {
+    border-image: url(:/lunchImages/images/Lunch/L06.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="L07Label">
+          <property name="text">
+           <string>Tuna Salad Bowl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="l02ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#l02ImageBtn {
+    border-image: url(:/lunchImages/images/Lunch/L02.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2" colspan="2">
+         <widget class="QLabel" name="L11Label">
+          <property name="text">
+           <string>Chicken Caesar Wrap</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QPushButton" name="l08ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#l08ImageBtn {
+    border-image: url(:/lunchImages/images/Lunch/L08.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QPushButton" name="l04ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#l04ImageBtn {
+    border-image: url(:/lunchImages/images/Lunch/L04.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="3">
+         <widget class="QLabel" name="L15Label">
+          <property name="text">
+           <string>Quick Lentil Soup</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLabel" name="L10Label">
+          <property name="text">
+           <string>Srimp Stir-Fry Bowl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0" colspan="3">
+         <widget class="QPushButton" name="lunchBackBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 250px;
+    min-height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+          </property>
+          <property name="text">
+           <string>Back</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QPushButton" name="l09ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#l09ImageBtn {
+    border-image: url(:/lunchImages/images/Lunch/L09.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLabel" name="L09Label">
+          <property name="text">
+           <string>Veggie Pasta</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="L03Label">
+          <property name="text">
+           <string>Fish in Tomato Sauce</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="l07ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#l07ImageBtn {
+    border-image: url(:/lunchImages/images/Lunch/L07.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="L04Label">
+          <property name="text">
+           <string>Quinoa Tabbouleh Bowl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2" colspan="2">
+         <widget class="QLabel" name="L12Label">
+          <property name="text">
+           <string>Sweet Potato &amp; Avocado Bowl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QPushButton" name="l10ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#l10ImageBtn {
+    border-image: url(:/lunchImages/images/Lunch/L10.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="L01Label">
+          <property name="text">
+           <string>Bean &amp; Roasted vegetable Salad</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="L05Label">
+          <property name="text">
+           <string>Vietnamese-Style Chicken Salad</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="L06Label">
+          <property name="text">
+           <string>Turkey Veggie Wrap</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2" colspan="2">
+         <widget class="QPushButton" name="l12ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#l12ImageBtn {
+    border-image: url(:/lunchImages/images/Lunch/L12.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QPushButton" name="l03ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#l03ImageBtn {
+    border-image: url(:/lunchImages/images/Lunch/L03.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="2" colspan="2">
+         <widget class="QPushButton" name="l15ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#l15ImageBtn {
+    border-image: url(:/lunchImages/images/Lunch/L15.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="2" colspan="2">
+         <widget class="QLabel" name="L14Label">
+          <property name="text">
+           <string>Caprese Salad Plate</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2" colspan="2">
+         <widget class="QPushButton" name="l11ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#l11ImageBtn {
+    border-image: url(:/lunchImages/images/Lunch/L11.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2" colspan="2">
+         <widget class="QPushButton" name="l13ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#l13ImageBtn {
+    border-image: url(:/lunchImages/images/Lunch/L13.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLabel" name="L13Label">
+          <property name="text">
+           <string>Egg Fried Rice</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="dinnerPage">
+     <property name="styleSheet">
+      <string notr="true">QWidget {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #f5f0ff,
+        stop:1 #ede0ff
+    );
+}
+
+QScrollArea {
+    background: transparent;
+    border: none;
+}
+
+QScrollArea &gt; QWidget &gt; QWidget {
+    background: transparent;
+}</string>
+     </property>
+     <widget class="QLabel" name="dinnerLabel">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>10</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>28</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>DINNER</string>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="dinnerScrollArea">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>1101</width>
+        <height>671</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="dinnerScrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1084</width>
+         <height>1182</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="D01Label">
+          <property name="text">
+           <string>Chicken &amp; Vegetable Casserole</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="D02Label">
+          <property name="text">
+           <string>Moroccan Meatballs with Vegetable Couscous</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="D03Label">
+          <property name="text">
+           <string>Zucchini Spaghetti Bolognese</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="d01ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#d01ImageBtn {
+    border-image: url(:/dinnerImages/images/Dinner/D01.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="d02ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#d02ImageBtn {
+    border-image: url(:/dinnerImages/images/Dinner/D02.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="d03ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#d03ImageBtn {
+    border-image: url(:/dinnerImages/images/Dinner/D03.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" rowspan="3">
+         <widget class="QLabel" name="D04Label">
+          <property name="text">
+           <string>Baked Salmon with Vegetables</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" rowspan="2">
+         <widget class="QLabel" name="D05Label">
+          <property name="text">
+           <string>Chicken with Roasted Vegetables</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="D06Label">
+          <property name="text">
+           <string>Beef &amp; Broccoli Stir-Fry</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2" rowspan="3">
+         <widget class="QPushButton" name="d06ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#d06ImageBtn {
+    border-image: url(:/dinnerImages/images/Dinner/D06.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1" rowspan="2">
+         <widget class="QPushButton" name="d05ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#d05ImageBtn {
+    border-image: url(:/dinnerImages/images/Dinner/D05.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QPushButton" name="d04ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#d04ImageBtn {
+    border-image: url(:/dinnerImages/images/Dinner/D04.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="D07Label">
+          <property name="text">
+           <string>Shrimp Tacos</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLabel" name="D08Label">
+          <property name="text">
+           <string>Backed Chicken with Sweet Potato</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="2">
+         <widget class="QLabel" name="D09Label">
+          <property name="text">
+           <string>Lentil Curry</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QPushButton" name="d07ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#d07ImageBtn {
+    border-image: url(:/dinnerImages/images/Dinner/D07.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QPushButton" name="d08ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#d08ImageBtn {
+    border-image: url(:/dinnerImages/images/Dinner/D08.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="2">
+         <widget class="QPushButton" name="d09ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#d09ImageBtn {
+    border-image: url(:/dinnerImages/images/Dinner/D09.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="D10Label">
+          <property name="text">
+           <string>Stuffed Bell Peppers</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLabel" name="D11Label">
+          <property name="text">
+           <string>Grilled Fish with Rice &amp; Greens</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="2" rowspan="2">
+         <widget class="QLabel" name="D12Label">
+          <property name="text">
+           <string>Light Chicken Alfredo Pasta</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0" rowspan="2">
+         <widget class="QPushButton" name="d10ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#d10ImageBtn {
+    border-image: url(:/dinnerImages/images/Dinner/D10.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1" rowspan="2">
+         <widget class="QPushButton" name="d11ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#d11ImageBtn {
+    border-image: url(:/dinnerImages/images/Dinner/D11.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="2">
+         <widget class="QPushButton" name="d12ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#d12ImageBtn {
+    border-image: url(:/dinnerImages/images/Dinner/D12.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="D13Label">
+          <property name="text">
+           <string>Tofu Vegetable Stir-Fry</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="QLabel" name="D14Label">
+          <property name="text">
+           <string>Eggplant Tomato Bake</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="2">
+         <widget class="QLabel" name="D15Label">
+          <property name="text">
+           <string>Chicken Quinoa Bowl</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QPushButton" name="d13ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#d13ImageBtn {
+    border-image: url(:/dinnerImages/images/Dinner/D13.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="QPushButton" name="d14ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#d14ImageBtn {
+    border-image: url(:/dinnerImages/images/Dinner/D14.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="2">
+         <widget class="QPushButton" name="d15ImageBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    min-width: 260px;
+    min-height: 180px;
+    max-width: 260px;
+    max-height: 180px;
+
+    border-radius: 18px;
+    border: none;
+
+    background-color: transparent;
+}
+
+QPushButton:hover {
+    border: 3px solid #c8a8f0;
+}
+
+QPushButton:pressed {
+    border: 3px solid #a57be3;
+}
+
+QPushButton#d15ImageBtn {
+    border-image: url(:/dinnerImages/images/Dinner/D15.jpg);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="1">
+         <widget class="QPushButton" name="dinnerBackBtn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 250px;
+    min-height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+          </property>
+          <property name="text">
+           <string>Back</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="recipesDetailPage">
+     <widget class="QLabel" name="recipeTitleLabel">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>0</y>
+        <width>601</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>450</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    background-color: #f5f0fa;
+    border-radius: 18px;
+    border: 2px solid #d8c8ef;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="recipeDetailsText">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>511</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPlainTextEdit {
+    background-color: white;
+    border: 2px solid #d1c4e9;
+    border-radius: 12px;
+    padding: 10px;
+    color: black;
+}</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="recipeDetailBackBtn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>680</y>
+        <width>431</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 250px;
+    min-height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="recipeImageLabel">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>120</y>
+        <width>691</width>
+        <height>671</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="healthHistoryPage">
+     <widget class="QLabel" name="healthHistory">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>451</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>36</pointsize>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Health History</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="healthHistoryTitleLabel">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>79</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="healthHistoryText">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>150</y>
+        <width>661</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPlainTextEdit {
+    background-color: white;
+    border: 2px solid #d1c4e9;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 16px;
+    color: black;
+	line-height: 24px;
+}
+</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="healthHistoryBackBtn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>700</y>
+        <width>274</width>
+        <height>69</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 250px;
+    min-height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="caloriesPage">
+     <property name="styleSheet">
+      <string notr="true">background-color: #f5f2f8;</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <item>
+       <widget class="QWidget" name="caloriesContainer" native="true">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0.95);
+border-radius: 22px;
+padding: 20px;</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item>
+          <widget class="QLabel" name="caloriesTitleLabel">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #5a2a6c;
+    font-size: 22px;
+    font-weight: bold;
+    background: transparent;
+}</string>
+           </property>
+           <property name="text">
+            <string>Calories Checker</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="foodInputLabel">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #7b4fa3;
+    font-size: 13px;
+    font-weight: 500;
+    background: transparent;
+}</string>
+           </property>
+           <property name="text">
+            <string>Enter a food : </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="foodInput">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    border: 2px solid #c9b2e6;
+    border-radius: 12px;
+    padding: 10px;
+    min-height: 38px;
+    font-size: 14px;
+    color: black;
+}
+
+QLineEdit:focus {
+    border: 2px solid #7b4fa3;
+    background-color: #fcfaff;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="checkCaloriesBtn">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 14px;
+    padding: 10px;
+    min-height: 42px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+           </property>
+           <property name="text">
+            <string>Check Calories</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="caloriesResultLabel">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #5a2a6c;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgba(245, 242, 248, 1);
+    border: 2px solid #d1c4e9;
+    border-radius: 14px;
+    padding: 14px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Result will appear here</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="caloriesBackBtn">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #e0d4f5;
+    color: #5a2a6c;
+    border-radius: 14px;
+    padding: 10px;
+    min-height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #d1c4e9;
+}</string>
+           </property>
+           <property name="text">
+            <string>Back</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="calorieNeedsPage">
+     <property name="styleSheet">
+      <string notr="true">background-color: #f5f2f8;</string>
+     </property>
+     <widget class="QWidget" name="caloriesNeedsContainer" native="true">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>40</y>
+        <width>1141</width>
+        <height>821</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255,255,255,0.95);
+border-radius: 22px;
+padding: 20px;</string>
+      </property>
+      <widget class="QPushButton" name="caloriesNeedsBackBtn">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>610</y>
+         <width>551</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #7b4fa3;
+    color: white;
+    border-radius: 14px;
+    padding: 10px;
+    min-height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #6a4290;
+}</string>
+       </property>
+       <property name="text">
+        <string>Back</string>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="calorieNeedsText">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>180</y>
+         <width>1071</width>
+         <height>321</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPlainTextEdit {
+    background-color: white;
+    border: 2px solid #d1c4e9;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 16px;
+    color: black;
+	line-height: 24px;
+}
+</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="caloriesNeedsTitleLabel">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>10</y>
+         <width>751</width>
+         <height>70</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>-1</pointsize>
+         <italic>true</italic>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #5a2a6c;
+    font-size: 22px;
+    font-weight: bold;
+    background: transparent;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Daily Calorie Needs</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1288</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
