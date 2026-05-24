@@ -7,7 +7,7 @@ WELLO was inspired by the challenges that many students face when trying to main
 ## Project Description
 WELLO is a health and wellness desktop application designed to help students manage their nutrition and daily habits. The application allows users to explore a variety of healthy recipes categorized into breakfast, lunch, and dinner. It also includes a calorie checking feature that helps users understand the nutritional value of their meals. Additionally, the app includes a simple ingredient shopping system where users can view available ingredients, select quantities, and simulate adding items to a cart. The application is built using C++ and the Qt framework, with a focus on creating a structured, interactive, and user-friendly interface.
 
-link to Youtube video: https://youtu.be/kc7tfdK_9kU
+link to Youtube video: https://youtu.be/FqYY67bAyx8
 ## Algorithm
 The application begins by launching the main window. If the user is accessing the app for the first time, they are prompted to enter basic health information. Once inside the main menu, the user can navigate through different sections such as recipes, health tracking, and ingredient shopping. When a recipe category is selected, the application reads data from a text file and dynamically displays the corresponding recipes. Each recipe includes details such as preparation time, calories, ingredients, and instructions. The calorie checker allows users to input a food name and retrieve nutritional information. In the shopping section, users can select ingredients, adjust quantities, and add items to a cart, with the total updating automatically. The system continuously responds to user actions and updates the interface accordingly.
 
@@ -19,3 +19,6 @@ Through this project, I gained valuable experience in building a complete applic
 
 ## Future Direction
 In the future, WELLO can be improved in several ways. The user interface can be enhanced to provide a more modern and interactive experience. A login and user profile system could be added to allow personalization and data saving. The recipe database can be expanded with more diverse options and filtering features based on dietary needs. The calorie tracking system can be improved for greater accuracy and real-time updates. Additional features such as meal planning, reminders, and health recommendations could also be included. Finally, the application could be adapted into a mobile or web version to make it more accessible and widely used.
+
+## Future Direction
+Mariam Penda Diop
